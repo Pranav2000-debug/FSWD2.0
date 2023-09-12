@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi column</title>
+    <style>
+        body{
+            display: flex;
+            background-color: #242b2e;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            justify-content: center;
+        }
+        .container{
+            max-width: 1200px;
+            width: 100%;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        h1{
+            font-size: 32px;
+            text-align: center;
+            color: #f66;
+        }
+        .card > .heading{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+        .card>img{
+            width: 150px;
+        }
+        .content{   
+            padding: 0px 20px;
+        }
+        .card
+        {
+            display: flex;
+            flex-direction: column;
+            border: 5px black solid;
+            border-radius: 5px;
+            width: 30%;
+            background-color: #fff;
+            align-items: center;
+            
+        }
+        .card-1{
+            background-color: #35bdd0;
+            color: #111010;
+        }
+        .card-2{
+            background-color: #e03b8b;
+            color: #111010;
+        }
+        .card-3{
+            background-color: #5a20cb;
+            color:#111010;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>
+            Full Stack Web Development
+        </h1>
+        <section class="main">
+        <div class="card-1 card">
+            <p class="heading">HTML</p>
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="html">
+            <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa cupiditate labore voluptate vero provident, dignissimos, ratione adipisci nisi, illum accusamus commodi aut. Ratione, eveniet minus! Aliquid rem mollitia pariatur, dicta vero in, excepturi, voluptates labore debitis eos quod corporis unde magnam nobis fugiat asperiores aspernatur animi illum maiores rerum natus totam eius obcaecati libero! Ipsa tenetur quasi quas quo doloremque at consequuntur? Architecto iure ipsum expedita quasi iusto pariatur quis, aperiam aliquid rerum rem atque adipisci necessitatibus sequi illum, cupiditate eaque, eum blanditiis esse nam ipsam quisquam impedit provident. Molestiae ad sit, quod quibusdam sed minima, fugiat repellendus corrupti sapiente deserunt rerum maxime amet quisquam nihil mollitia ducimus iusto enim inventore praesentium accusantium magni. Aperiam ullam obcaecati deserunt molestias? </p>
+        </div>
+        <div class="card-2 card">
+            <p class="heading">CSS</p>
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="CSS">
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti omnis, illum optio at earum fugit error molestiae fuga, facilis fugiat, sunt vel velit mollitia. Numquam, quaerat libero nihil sed fuga itaque iste error architecto amet illum suscipit magnam temporibus odit magni ducimus! Architecto, praesentium. Veritatis consectetur repudiandae sapiente saepe ut, suscipit cumque possimus ab, nihil at quo aliquam fugiat, recusandae debitis nobis qui quae minus similique. Illum, delectus quaerat.</p>
+        </div>
+        <div class="card-3 card">
+            <p class="heading">JavaScript</p>
+            <img src="https://www.citypng.com/public/uploads/small/11662226392uom4gsi9ddb1c81ipfx2u4imargvwq7uskhdui1pj4f6xufjz0jkfzqzduhjuifts0dzcnykgszw6isfutq2nlwb51ef4gm0dt8d.png" alt="JavaScript">
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloribus iure aliquam voluptates sequi delectus repudiandae amet officia, ab quae tenetur at accusantium, aperiam ipsam architecto rem non modi ullam autem incidunt, molestias eius? Nesciunt, nam. Itaque blanditiis provident numquam labore omnis, officia voluptates placeat debitis obcaecati. Exercitationem, maiores deserunt.</p>
+        </div>
+        </section>
+    </section>
+</body>
+</html>

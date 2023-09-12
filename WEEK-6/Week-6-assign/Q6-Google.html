@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google searchbar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            background-color: #202124;
+            display: flex;
+            justify-content: center;
+        }
+ 
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+        color: #6e7277;
+        
+}
+
+        .mnc{
+            width: 50px;
+        }
+        .google-text{
+            width: 40%;
+            margin-bottom: 40px;
+        }
+        .container{
+            display: flex;
+            max-width: 900px;
+            height: 90vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:0;
+        }
+        input{
+            height: 100%;
+            width: 80%;
+            background-color: transparent;
+            border: 0;
+            color: white;
+            outline: none;
+            font-size: 20px;
+        }
+        .search-bar{
+            width: 100%;
+            border: 1px solid white;
+            border-radius: 50px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="google-text" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png" alt="logo">
+        <div class="search-bar">
+            <div>
+                <span class="material-symbols-outlined">search</span>
+            </div>
+        <input type="text">
+        <img class="mnc"  src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png" alt="1">
+        <img class="mnc" src="https://cdn.icon-icons.com/icons2/2642/PNG/512/google_lens_logo_icon_159340.png" alt="2">
+        </div>
+    </div>
+</body>
+</html>
