@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>healthy restaurant with navbar</title>
+    <style>
+        .container{
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2,1fr);
+            padding: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            align-items: center;
+        }
+        .image{
+            background-color: yellow;
+            height: 100%;
+            max-height:90vh;
+        }
+        .image>img{
+            width: 70%;
+            height: 100%;
+
+        }
+        .content{
+            padding: 0px 50px;
+        }
+        .content>h1{
+            font-size: 40px;
+        }
+        .content>p{
+            color: #4c665d;
+        }
+        .content>button{
+            padding: 10px 50px;
+            border: 0;
+            background-color: black;
+            color: white;
+            font-size: large;
+            margin-top: 30px ;
+        }
+        nav>img{
+            width: 50px;
+        }
+        nav{
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            align-items: center;
+        }
+        nav>button{
+            border: none;
+            background-color: #32cd32;
+            color: #000000;
+            font-weight: bold;
+            padding: 10px 0;      
+            border-radius: 5px; 
+            margin-left: 60%; 
+        }
+        .navbar>a{
+            text-decoration: none;
+            padding-right:50px;
+            color: black;
+        }
+        .navbar>a:hover{
+            color: #32cd32;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png" alt="logo">
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <button>Login</button>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h1>Healthy Food</h1>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dignissimos, tenetur rem consequuntur aspernatur accusamus voluptate itaque necessitatibus at libero? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum consequatur alias fugit corporis delectus provident. Necessitatibus incidunt, quis enim temporibus ad, vero explicabo alias repellat amet quae non molestiae quas.</p>
+            <button>Read More</button>
+        </div>
+        <div class="image">
+            <img src="foodhealthy.jpg" alt="food">
+        </div> 
+    </div>
+</body>
+</html>
