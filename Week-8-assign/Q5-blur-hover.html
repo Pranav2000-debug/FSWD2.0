@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to reveal image</title>
+    <style>
+        img{
+            height: 500px;
+            width: 800px;
+            border: 5px solid black;
+            filter: blur(16px);
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;    
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        img:hover{
+            transition:2s;
+            filter: blur(0px);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 50px;"><u>Hover To Reveal The Image.</u></h1>
+    <img src="azoom.webp" alt="image">
+</body>
+</html>
