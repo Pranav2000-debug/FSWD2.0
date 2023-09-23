@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen-hamburger</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48;
+            color: white;
+            
+        }
+        .screen-1>img{ 
+            width: 50px;
+        }
+        nav{
+            display: flex;
+            height: 50px;
+            background-color: #242b2e;
+            align-items: center;
+            padding: 5px;
+        }
+        .screen-1{
+            display: none;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+        }
+        .links{
+            display: flex;
+            align-items: center;
+        }
+        .links > a{
+            text-decoration: none;
+            color: white;
+            margin-right: 25px;
+
+        }
+        .screen-1>button{
+            border: none;
+            padding: 0px 40px;
+            background-color: #0072e1;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px 0px;
+        }
+        .screen-2 > img{
+            width: 30px;
+        }
+        .screen-2{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 20px;
+        }
+        @media  screen and (min-width:800px) {
+            .screen-1{
+                display: flex;
+            }
+            .screen-2{
+                display: none;
+            }
+        }
+        .links a:hover{
+            transform: scale(1.1);
+            color: #76b5d3;
+        }
+        .screen-1 button:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .material-symbols-outlined:hover{
+            scale: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <section class="screen-1">
+        <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="logo">
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <button>
+            Login
+        </button>
+    </section>
+    <section class="screen-2">
+        <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="s-logo">
+        <div>
+            <span class="material-symbols-outlined">
+                Menu
+            </span>
+        </div>
+    </section>
+    </nav>
+</body>
+</html>
