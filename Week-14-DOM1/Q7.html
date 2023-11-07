@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="textInput" type="text">
+    <h3>Results: </h3>
+    <ul>
+        <li id="itemList">HTML</li>
+        <li id="itemList">JavaScript</li>
+        <li id="itemList">CSS</li>
+        <li id="itemList">Tailwind</li>
+        <li id="itemList">Github</li>
+    </ul>
+
+    <script>
+        const filterInput = document.getElementById("textInput");
+        const items = document.querySelectorAll("#itemList");
+        console.log(items);
+
+        filterInput.addEventListener("input", searchFunc);
+
+        function searchFunc() {
+            const filterText = filterInput.value.toLowerCase();
+            for (let index = 0; index < items.length; index++) {
+                const text = items[index].innerText.toLowerCase();
+                if(text.includes(filterText)){
+                    items[index].style.display = "list-item";
+                }
+                else{
+                    items[index].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

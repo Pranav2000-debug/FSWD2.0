@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Counter</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: monospace;
+    }
+    .container{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .counter{
+        font-size: 50px;
+    }
+    
+    i{
+        padding: 8px;
+    }
+</style>
+<body>
+    <h1>Counter</h1>
+    <div class="container">
+        <button id="incBtn"><i class="fa-solid fa-plus"></i></button>
+        <p id="dispCounter" class="counter">0</p>
+        <button id="decBtn"><i class="fa-solid fa-minus"></i></button>
+    </div>
+    <script>
+        const counterBtn1 = document.getElementById("incBtn");
+        const counterBtn2 = document.getElementById("decBtn");
+        const text = document.getElementById("dispCounter");
+        let c = 0;
+        counterBtn1.addEventListener("click", () =>{
+            c++;
+            text.textContent = c;
+        })
+        counterBtn2.addEventListener("click", () =>{
+                c--;
+            if(c < 0){
+                alert("Counter is going beyond 0");
+            }
+            else{
+                text.textContent = c;
+            }
+        })
+
+    </script>
+</body>
+</html>
