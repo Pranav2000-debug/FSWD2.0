@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        color: #fff;
+        font-size: 4rem;
+    }
+    .timer{
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+<body>
+    <div class="timer" id="timer">
+        <span id="hours">00</span> : <span id="minutes">00</span> :
+        <span id="seconds">00</span>
+      </div>
+
+    <script>
+        function updateTimer(){
+            const currentTime = new Date();
+            const options = { minimumIntegerDigits: 2, useGrouping: false };
+            const hours = currentTime.getHours().toLocaleString('en-US', options);
+            const minutes = currentTime.getMinutes().toLocaleString('en-US', options);
+            const seconds = currentTime.getSeconds().toLocaleString('en-US', options);
+            const hexCode = `#${hours}${minutes}${seconds}`;
+
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+            document.body.style.backgroundColor = hexCode;
+        }
+        setInterval(updateTimer, 1000);
+    </script>
+</body>
+</html>
